@@ -1,0 +1,29 @@
+h2  {
+    color: #282835;
+    font-size: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    text-align: left;
+}
+h3  {
+    color: #8a8aa1;
+    font-size: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    text-align: left;
+}
+p {
+padding-left: 20px;
+}
+.navMain{
+    max-width:800px; 
+    background-color:#884242; 
+    margin: 0 auto; 
+    margin-top:20px; 
+    padding:10px;
+}
+.navHead{
+    max-width:800px; 
+    background-color:#ffcbbb; 
+    margin: 0 auto; 
+    margin-top:0px; 
+    padding:10px;
+}
