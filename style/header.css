@@ -5,6 +5,8 @@ h1  {
     text-align: left;
 }
 .headbox{
+    flex-direction: column;
+    justify-content: flex-start;
     width:100%; 
     background-color:#790000; 
     padding: 10px; 
@@ -19,7 +21,8 @@ h1  {
     margin-top:0px; 
     padding:12px;
 }
-.linkbox{
+@media screen and (min-width: 980px) /* Desktop */ {
+  .linkbox{
     float:left; 
     max-width:0 auto; 
     bottom:800px; 
@@ -27,7 +30,20 @@ h1  {
     margin: 1px; 
     margin-top:0px; 
     padding:12px;
+  }
 }
+@media screen and (max-width: 500px) /* Mobile */ {
+  .linkbox{
+    float:left; 
+    max-width:0 auto; 
+    bottom:300px; 
+    background-color:#ccc; 
+    margin: 1px; 
+    margin-top:0px; 
+    padding:12px;
+  }
+}
+
 #main-aside-wrapper {
     flex-direction: row;
     display: flex;

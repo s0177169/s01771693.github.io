@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 
 <!--
-color: #27292b;
-color: #faf0e6;
-color: #fffff0;
-color: #ffcbbb;
+color: #27292b; grey
+color: #faf0e6; white
+color: #fffff0; white-soft
+color: #ffcbbb; peach
 -->
 
 <html lang="ru">
@@ -15,7 +15,7 @@ color: #ffcbbb;
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>DZ_2</title>
+    <title>DZ_3</title>
 
     <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/nav.css">
@@ -25,7 +25,7 @@ color: #ffcbbb;
     <style>
       body{
        background-color: #27292b;
-      } 
+      }
     </style>
 
   </head>
@@ -81,7 +81,12 @@ color: #ffcbbb;
           <li> <a href="https://horo.mail.ru/prediction/libra/today/" onclick="return false;" title=""> запрещенная ссылка</a> </li>
           <li> <a href="https://example.com/?param1=value1&param2=value2&param3=value3" title=""> ссылка с тремя параметрами</a> </li>
           <li> <a href="ftp://example.com/path/to/file.zip">cсылку на файл на сервере FTP с авторизацией;</a> </li>
-          <li> <img src="https://vsegda-pomnim.com/uploads/posts/2022-04/1648937416_59-vsegda-pomnim-com-p-luchi-solntsa-opushka-lesa-foto-71.jpg" style="width: 300px;" alt="numbers" usemap="#num1"> <map name="num1"> <area shape="rect" coords="100,100,5,4" href="http://vsegda-pomnim.com/uploads/posts/2022-04/1648926013_39-vsegda-pomnim-com-p-vechernii-les-foto-45.jpg" title="" alt="forest"></map> </li>
+          <li> <img src="https://vsegda-pomnim.com/uploads/posts/2022-04/1648937416_59-vsegda-pomnim-com-p-luchi-solntsa-opushka-lesa-foto-71.jpg" style="width: 300px; height: 300px;" alt="numbers" usemap="#num"> 
+            <map name="num"> 
+              <area shape="rect" coords="0,0,300,150" href="http://vsegda-pomnim.com/uploads/posts/2022-04/1648926013_39-vsegda-pomnim-com-p-vechernii-les-foto-45.jpg" title="" alt="forest">
+              <area shape="rect" coords="0,150,300,300" href="lake-forest.png" title="" alt="lake">
+            </map>
+          </li>
           <li> <a href="fishka.html" title=""> fishka.html</a> </li>
           <li> <a href="about/churchil.html" title=""> about/churchil.html</a> </li>
           <li> <a href="about/spec/turing-machine.html" title=""> turing-machine.html</a> </li>
@@ -174,7 +179,7 @@ color: #ffcbbb;
 
           <label for="field-tel">
             Текстовое поле tel:<br /> </label>
-            <input required type="tel" id="field-tel" name="field-tel" pattern="7[0-9]{10}" placeholder="Введите телефон"/>
+            <input required type="tel" id="field-tel" name="field-tel" placeholder="Введите телефон"/>
           <br />
 
           <label>
@@ -212,8 +217,8 @@ color: #ffcbbb;
           </label><br />
       
           Чекбокс:<br />
-          <label><input type="checkbox" checked="checked" name="check-1" />
-          С контрактом ознакомлен </label><br />
+          <label for="checkboxagree"> <input required type="checkbox" name="check-1" id="checkboxagree" /> С контрактом ознакомлен </label> <br />
+          <br />
       
           <label>
           <button type="submit">Сохранить</button>
